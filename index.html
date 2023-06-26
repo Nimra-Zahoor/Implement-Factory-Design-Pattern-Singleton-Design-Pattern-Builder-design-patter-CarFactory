@@ -10,15 +10,16 @@
   <div class="controls">
     <label for="carType">Car Type:</label>
     <select id="carType">
-      <option value="sedan">Sedan</option>
       <option value="suv">SUV</option>
-      <option value="sports">Sports Car</option>
+      <option value="ferrari">Ferrari</option>
+      <option value="honda">Honda</option>
     </select>
-    <button id="createCarBtn">Create Car</button>
+    <button id="createCarBtn" onclick="createCar()">Create Car</button>
   </div>
   <div class="carList">
     <h2>Car List</h2>
-    <ul id="carListContainer"></ul>
+    <textarea id="carListContainer" rows="4" cols="50" readonly></textarea>
+  </div>  
   </div>
 </body>
 </html>
